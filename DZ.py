@@ -10,15 +10,21 @@ def chasto(a):
     result2 = max(a, key=a.count)
     return result2, vsego
 
+# def bukva(a):
+#     new_res = []
+#     for i in range(len(a)):
+#         f = str(a[i])
+#         for j in range(len(f)):
+#             g = f[0]
+#             new_res.append(g)
+#     result3 = max(g, key=g.count)
+#     return result3
+
 def bukva(a):
-    new_res = []
-    for i in range(len(a)):
-        f = str(a[i])
-        for j in range(len(f)):
-            g = f[0]
-            new_res.append(g)
-    result3 = max(g, key=g.count)
+    new_res = list(map(str, a))
+    result3 = max(new_res[0], key=new_res.count)
     return result3
+
 
 otdel = ['Вася', 'Петя', 'Маша', 'Вовочка', 'Антон', 'Андрей', 'Ирвин', 'Мезозой', 'Иврит', 'Александр', 'Вениамин', 'Геннадий', 'Чебурашкен', 'Анатолий', 'Вельзевул', 'Зверь', 'Иннокентий', 'Паладин', 'Оргструктура', 'Величие']
 n = 25
