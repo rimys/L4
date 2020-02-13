@@ -1,7 +1,4 @@
 import random
-
-
-n = 25
 def spisok(kolvo, imena):
     result1 = []
     for i in range(0, kolvo):
@@ -23,10 +20,10 @@ def bukva(a):
     result3 = max(g, key=g.count)
     return result3
 
-
 otdel = ['Вася', 'Петя', 'Маша', 'Вовочка', 'Антон', 'Андрей', 'Ирвин', 'Мезозой', 'Иврит', 'Александр', 'Вениамин', 'Геннадий', 'Чебурашкен', 'Анатолий', 'Вельзевул', 'Зверь', 'Иннокентий', 'Паладин', 'Оргструктура', 'Величие']
-s = spisok(n, otdel)
+n = 25
 
+s = spisok(n, otdel)
 
 print(s)
 print(chasto(s))
